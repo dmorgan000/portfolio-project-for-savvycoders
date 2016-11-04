@@ -1,5 +1,6 @@
 # GREETINGS FROM DEBRA
-How are you today? This is a picture me.
+How are you today?  Nice to meet you today. This is a picture me.
+
 
 ![local photo](https://avatars3.githubusercontent.com/u/23179380?v=3&s=466)
 
