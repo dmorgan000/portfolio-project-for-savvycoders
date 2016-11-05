@@ -1,11 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<style>
+        #nav-list > li {
+          display: inline-block;
+          }
+
+        #nav-list a{
+          color:yellow;
+        }
+
+      #nav-list > li:first-child > a{
+          color: green;
+      }
+
+      #nav-list > li:nth-child(2) > a{
+          color: orange;
+          text-decoration: none;
+      }
+</style>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="stylesheet" href="../css/style.css">
+
 </head>
+
+  <h1>Welcome to Debra's Blog
+  </h1>
+
+  <img src="../Images/DebrasImageforJavaClass.jpg" alt="Headshot">
+
+  <nav>
+    <ul id="nav-list">
+      <li><a href="../media">Media</a></li>
+      <li><a href=.."blog">Blog</a></li>
+      <li><a href="..content">Content</a></li>
+      <li><a href="  projects">Projects</a></li>
+    </ul>
+  </nav>
+
+  <div>This is a div section. So this is my new blog. I get to say whatever I want to say and you can't do anything about it!</div>
+
+      <section>This is the first div section. This is the second section in my blog.</section>
+      <section>This is the second div section. This is the second section in my blog.</section>
+
+  <footer>&copy;This is a footer. Copyright Handley, Inc.</footer>
 <body>
 
 </body>
