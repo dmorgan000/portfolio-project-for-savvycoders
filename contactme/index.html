@@ -7,40 +7,61 @@
   <title>Contact Me</title>
   <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
-  <h1>Contact Me</h1>
+    <div>
+      <h1>Contact Me</h1>
 
-  <img src="../Images/DebrasImageforJavaClass.jpg" alt="Headshot">
+      <img src="../Images/DebrasImageforJavaClass.jpg" alt="Headshot">
+    </div>
 
-  <nav>
-    <ul id="nav-list">
-      <li class="list-item"><a href="media">Media</a></li>
-      <li class="list-item"><a href="blog">Blog</a></li>
-      <li class="list-item"><a href="ContactMe">Contact Me</a></li>
-      <li class="list-item"><a href="projects">Projects</a></li>
-    </ul>
-  </nav>
-
+    <div>
+      <nav>
+        <ul id="nav-list">
+          <li class="list-item"><a href="media">Media</a></li>
+          <li class="list-item"><a href="blog">Blog</a></li>
+          <li class="list-item"><a href="ContactMe">Contact Me</a></li>
+          <li class="list-item"><a href="projects">Projects</a></li>
+        </ul>
+      </nav>
+    </div>
 
   <form action="https://formspree.io/dmorgan000@yahoo.com" form-responses/new" method="POST">
 
-      <br> <br>
-      <input type="text" name="firstname" placeholder="First Name" size="50" autofocus>
-      <br> <br>
-      <input type="text" name="lastname" placeholder="Last Name" size="50">
-      <br> <br>
-      <input type="email" name="_replyto" placeholder="your.email@example.com" size= "50">
-      <br> <br>
-      <label>What's this message about?
-        <input type="radio" name="subject" value="professional" checked><span>I'd like to hire you!</span>
-        <input type="radio" name="subject" value="personal"><span>Personal message</span>
-        <input type="radio" name="subject" value="other"><span>Don't know/something else</span>
-      </label>
+    <div>
+        <br> <br>
+        <input type="text" name="firstname" placeholder="First Name" size="50" autofocus>
+        <br> <br>
+        <input type="text" name="lastname" placeholder="Last Name" size="50">
+        <br> <br>
+        <input type="email" name="_replyto" placeholder="your.email@example.com" size= "50">
+        <br> <br>
+    </div>
 
+<br /><br />
+
+    <div>
+      <label>What's this message about?
+        <section>
+            <input type="radio" name="subject" value="professional" checked><span>I'd like to hire you!</span>
+            <input type="radio" name="subject" value="personal"><span>Personal message</span>
+            <input type="radio" name="subject" value="other"><span>Don't know/something else</span>
+        </section>
+      </label>
+    </div>
+
+      <br><br>
+    <div>
       <input type="checkbox" name="optin" value="trusting" checked>Subscribe me to your newsletter!
+    </div>
+
+  <br /><br />
+
       <input type="checkbox" name="optout" value="skeptical" disabled>Cheeky checkbox...
+<br /><br />
 
       <label for="marketing">How did you hear about me?</label>
+<br />
       <select name="marketing">
         <optgroup label="Online">
           <option value="social">Social Media (FB, Twitter, LinkedIn)</option>
@@ -55,22 +76,42 @@
         </optgroup>
         <option value="other">Other</option>
       </select>
+<br /><br />
 
+    <div>
+        <section>
       <textarea name="user_message" rows="8" cols="40"></textarea>
-      <input type="submit" value="Send">
-  </form>
+        </section>
+    </div>
 
-    <p class+"content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus iste totam deserunt ipsa blanditiis dolores, minima dolore animi voluptatem vel, voluptate fugiat, asperiores non corporis iure tempora ducimus praesentium quo.</p>
-  <ol>
-    <li>
-      <a href="https://github.com">GitHub</a>
-    </li>
-    <li>
-      <a href="https://facebook.com">Facebook</a>
-    </li>
-    <li>
-      <a href="https://linkedin.com">LinkedIn</a>
-    </li>
-  </ol>
+    <div>
+        <section>
+          <input type="submit" value="Submit">
+        </section>
+    </div>
+</form>
+
+
+
+    <div>
+    <section>
+        <p class+"content">Here are my other links.
+        </p>
+        <br />
+
+          <ol>
+            <li>
+              <a href="https://github.com">GitHub</a>
+            </li>
+            <li>
+              <a href="https://facebook.com">Facebook</a>
+            </li>
+            <li>
+              <a href="https://linkedin.com">LinkedIn</a>
+            </li>
+          </ol>
+      </section>
+    </div>
+
 </body>
 </html>
