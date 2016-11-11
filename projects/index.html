@@ -34,5 +34,45 @@
             <a href="https://linkedin.com">LinkedIn</a>
           </li>
       </ol>
+
+      <script type="text/javascript">
+          var name  = prompt ( "Whats your Name" );
+
+          alert ("Hello " + name);
+
+          var favoriteCountry = prompt("Whats your favorite country?");
+
+          var handleCountry = function (country){
+
+
+                if (country ==="USA"){
+                  alert ("Nice");
+                }
+                else if(country === "Mexico" || country ==="Honduras"){
+                  alert("Gracias");
+                }
+                else if(country === "Italy"){
+                  alert("Chiao");
+                }
+                else {
+                  alert ("Looks like you need more FREEDOM");
+                }
+            };
+
+            var freedomCheck = function( country) {
+                if (country ){
+                  handleCountry( country );
+                }
+              else{
+                var newFavoriteCountry = prompt("Please input a country?");
+
+                freedomCheck( newFavoriteCountry );
+
+              }
+            };
+
+            freedomCheck( favoriteCountry );
+      </script>
+
 </body>
 </html>
