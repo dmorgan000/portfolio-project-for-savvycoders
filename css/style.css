@@ -64,7 +64,7 @@ table {
     }
 
 		* {
-			border: 1px solid red;
+			border: 1px solid black;
 			}
 
 	  section{
@@ -72,10 +72,11 @@ table {
     margin: 0.5em 0;
 	  }
 
-		/*.container {
+		.container {
 			max-width: 960px;
 			margin: 0 auto;
-		}*/
+			color: black;
+		}
 
 		.content{
       color: black;

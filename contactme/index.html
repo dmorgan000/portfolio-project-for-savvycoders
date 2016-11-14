@@ -17,64 +17,57 @@
     </div>
 
     <div>
-      <nav>
-        <ul id="nav-list">
-          <li class="list-item"><a href="media">Media</a></li>
-          <li class="list-item"><a href="blog">Blog</a></li>
-          <li class="list-item"><a href="ContactMe">Contact Me</a></li>
-          <li class="list-item"><a href="projects">Projects</a></li>
-        </ul>
+      <section>
+          <nav class="container">
+            <ul id="nav-list">
+              <li class="list-item"><a href="media">Media</a></li>
+              <li class="list-item"><a href="blog">Blog</a></li>
+              <li class="list-item"><a href="ContactMe">Contact Me</a></li>
+              <li class="list-item"><a href="projects">Projects</a></li>
+            </ul>
       </nav>
+      </section>
     </div>
 
   <form action="https://formspree.io/dmorgan000@yahoo.com" form-responses/new" method="POST">
 
-    <div>
-        <br> <br>
-        <input type="text" name="firstname" placeholder="First Name" size="50" autofocus>
-        <br> <br>
-        <input type="text" name="lastname" placeholder="Last Name" size="50">
-        <br> <br>
-        <input type="email" name="_replyto" placeholder="your.email@example.com" size= "50">
-        <br> <br>
-    </div>
-
-<br /><br />
-F
-    <div>
-      <label class="content">What's this message about?
+    <div class="container">
         <section>
-            <input type="radio" name="subject" value="professional" checked><span>I'd like to hire you!</span>
-            <input type="radio" name="subject" value="personal"><span>Personal message</span>
-            <input type="radio" name="subject" value="other"><span>Don't know/something else</span>
+            <br> <br>
+            <input type="text" name="firstname" placeholder="First Name" size="50"  required autofocus>
+            <br> <br>
+            <input type="text" name="lastname" placeholder="Last Name" size="50" required>
+            <br> <br>
+            <input type="email" name="_replyto" placeholder="your.email@example.com" size= "50" required>
+            <br> <br>
         </section>
-      </label>
     </div>
 
-      <br><br>
-    <div>
-      <input type="checkbox" name="optin" value="trusting" checked><span style="color: Red">Subscribe Me</span> to your newsletter!
+    <div class="container">
+        <section>
+            <label class="content">What's this message about?
+              <input type="radio" name="subject" value="professional" checked><span>I'd like to hire you!</span>
+              <input type="radio" name="subject" value="personal"><span>Personal message</span>
+              <input type="radio" name="subject" value="other"><span>Don't know/something else</span>
+            </label>
+        </section>
     </div>
 
-  <br /><br />
+    <div class="container">
+      <section>
+          <input type="checkbox" name="optin" value="trusting" checked>Subscribe me to your newsletter!
+      </section>
+    </div>
 
-      <div>
+    <div class="container">
           <section>
           <input type="checkbox" name="optout" value="skeptical" disabled>Cheeky checkbox...
         </section>
-    </div>
 
-    <div>
+ <!-- WHERE DO YOU ADD THE REQUIRED ATTRIBUTE TO THE DROPDOWN BOX? -->
         <section>
-
           <label for="marketing">How did you hear about me?</label>
-        </section>
-    </div>
-
-
-    <div>
-        <section>
-                <select name="marketing">
+          <select name="marketing">
             <optgroup label="Online">
               <option value="social">Social Media (FB, Twitter, LinkedIn)</option>
               <option value="github">Online Portfolio (GitHub)</option>
@@ -91,14 +84,14 @@ F
         </section>
     </div>
 
-
-    <div>
+    <div class="container">
         <section>
-      <textarea name="user_message" rows="8" cols="40"></textarea>
+          <p>Comments</p>
+            <textarea name="user_message" rows="8" cols="40"></textarea>
         </section>
     </div>
 
-    <div>
+    <div class="container">
         <section>
           <input type="submit" value="Submit">
         </section>
@@ -107,7 +100,7 @@ F
 
 
 
-    <div>
+    <div class="container">
     <section>
         <p class="content">Here are my other links.
 
@@ -128,7 +121,7 @@ F
       </section>
     </div>
 
-    <div>
+    <div class="container">
         <section>
             <p>
               <a href="mailto:dmorgan000@yahoo.com?Subject=Contact%20Me">Send Me An Email</a>
@@ -138,6 +131,6 @@ F
 
 </body>
 
-<footer>&copy;This is a footer. Copyright Handley, Inc.</footer>
+<footer class="container">&copy;This is a footer. Copyright Handley, Inc.</footer>
 
 </html>
