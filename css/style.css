@@ -13,7 +13,7 @@ figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
-	padding: 0;
+	padding: 0em;
 	border: 0;
 	font-size: 100%;
 	font: inherit;
@@ -42,14 +42,18 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/*END OF USER AGENT STYLESHEET FROM http://meyerweb.com/eric/tools/css/reset*/
+/*END OF USER AGENT STYLESHEET ADDED FROM http://meyerweb.com/eric/tools/css/reset*/
 
 	  body{
       background-color: white;
     }
 
-    h1{
+    #welcome{
       color: #9C27B0;
+			padding: 1em;
+			margin: 0.5em 0;
+			font-size:40px;
+			text-align:center;
     }
 
     img{
@@ -57,21 +61,25 @@ table {
       height: auto;
     }
 
-  section{
-    padding: 1em;
+		* {
+			border: 1px solid red;
+			}
+
+	  section{
+    padding: 10px;
     margin: 0.5em 0;
-  }
+	  }
 
     .content{
-      color:rgb(40,40,40);
+      color: #9C27B0;
       width: 100%;
       margin: 0 auto;
-    }
+			}
 
     label{
         display: flex;
         justify-content: flex-start;
-    };
+		}
 
 
     #sub-heading{
@@ -94,13 +102,18 @@ table {
 				justify-content: space-between;
     }
 
-
 		#nav-list	a:hover{
 			color: red;
 			cursor: pointer;
-			font: 
 		}
 
+		#firstsection{
+			background-color: bisque;
+		}
+
+		#secondsection{
+			background-color: wheat;
+		}
 
     /*
     .absolute{

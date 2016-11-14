@@ -5,22 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Contact Me</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto|Shrikhand" rel="stylesheet">
-
+  <!--????????? HOW DOES THIS WORK inserted line from google fonts ???-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Shrikhand">
   <link rel="stylesheet" href="../css/style.css">
-
-
 </head>
 
 <body>
-    <div>
-      <h1>Contact Me</h1>
-<!--?????????  -->
-      <!-- inserted line from google fonts HOW DOES THIS WORK???-->
-      <img src="../Images/DebrasImageforJavaClass.jpg" alt="Headshot">
+    <div id="welcome">
+       <h1>Contact Me</h1>
+       <img src="../Images/DebrasImageforJavaClass.jpg" alt="Headshot">
     </div>
 
-  <hr>
     <div>
       <nav>
         <ul id="nav-list">
@@ -47,7 +42,7 @@
 <br /><br />
 
     <div>
-      <label>What's this message about?
+      <label class="content">What's this message about?
         <section>
             <input type="radio" name="subject" value="professional" checked><span>I'd like to hire you!</span>
             <input type="radio" name="subject" value="personal"><span>Personal message</span>
@@ -58,7 +53,7 @@
 
       <br><br>
     <div>
-      <input type="checkbox" name="optin" value="trusting" checked>Subscribe me to your newsletter!
+      <input type="checkbox" name="optin" value="trusting" checked><span style="color: Red">Subscribe Me</span> to your newsletter!
     </div>
 
   <br /><br />
@@ -132,5 +127,16 @@
       </section>
     </div>
 
+    <div>
+        <section>
+            <p>
+              <a href="mailto:dmorgan000@yahoo.com?Subject=Contact%20Me">Send Me An Email</a>
+            </p>
+      </section>
+    </div>
+
 </body>
+
+<footer>&copy;This is a footer. Copyright Handley, Inc.</footer>
+
 </html>
