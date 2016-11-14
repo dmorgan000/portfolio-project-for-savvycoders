@@ -18,6 +18,8 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+/*I ADDED BOX-SIZING BUT CAN'T TELL IF IT WORKED (WK1MOD3)*/
+	box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -70,8 +72,13 @@ table {
     margin: 0.5em 0;
 	  }
 
-    .content{
-      color: #9C27B0;
+		/*.container {
+			max-width: 960px;
+			margin: 0 auto;
+		}*/
+
+		.content{
+      color: black;
       width: 100%;
       margin: 0 auto;
 			}
