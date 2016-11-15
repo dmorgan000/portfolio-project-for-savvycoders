@@ -9,53 +9,32 @@
 </head>
 
 <body>
-      <h1>This is Debra's Project Page</h1>
 
-      <img src="../Images/DebrasImageforJavaClass.jpg" alt="Headshot">
-
-      <nav>
-            <ul id="nav-list">
-              <li class="list-item"><a href="media">Media</a></li>
-              <li class="list-item"><a href="blog">Blog</a></li>
-              <li class="list-item"><a href="contactme">Contact Me</a></li>
-              <li class="list-item"><a href="projects">Projects</a></li>
-            </ul>
-      </nav>
-
-            <p class+"content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus iste totam deserunt ipsa blanditiis dolores, minima dolore animi voluptatem vel, voluptate fugiat, asperiores non corporis iure tempora ducimus praesentium quo.</p>
-      <ol>
-          <li>
-            <a href="https://github.com">GitHub</a>
-          </li>
-          <li>
-            <a href="https://facebook.com">Facebook</a>
-          </li>
-          <li>
-            <a href="https://linkedin.com">LinkedIn</a>
-          </li>
-      </ol>
+      <div id="output"></div>
 
       <script type="text/javascript">
-          var name  = prompt ( "Whats your Name" );
+          var name = prompt( "Whats your Name" );
+          var output = document.querySelector( "#output" );
+          var favoriteCountry;
 
-          alert ("Hello " + name);
-
-          var favoriteCountry = prompt("Whats your favorite country?");
-
-          var handleCountry = function (country){
+          output.textContent = "Hello " + name + ". ";
 
 
-                if (country ==="USA"){
-                  alert ("Nice");
+          var handleCountry = function(country){
+                if (country === "USA" ){
+
+                  output.textContent += " Nice!";
                 }
                 else if(country === "Mexico" || country ==="Honduras"){
-                  alert("Gracias");
+
+                  output.textContent += "Gracias";
                 }
                 else if(country === "Italy"){
                   alert("Chiao");
                 }
                 else {
-                  alert ("Looks like you need more FREEDOM");
+                  // alert ("Looks like you need more FREEDOM");
+                    output.textContent += "Looks like you need more FREEDOM";
                 }
             };
 
@@ -74,5 +53,31 @@
             freedomCheck( favoriteCountry );
       </script>
 
+      <!--
+          <h1>This is Debra's Project Page</h1>
+
+          <img src="../Images/DebrasImageforJavaClass.jpg" alt="Headshot">
+
+          <nav>
+                <ul id="nav-list">
+                  <li class="list-item"><a href="media">Media</a></li>
+                  <li class="list-item"><a href="blog">Blog</a></li>
+                  <li class="list-item"><a href="contactme">Contact Me</a></li>
+                  <li class="list-item"><a href="projects">Projects</a></li>
+                </ul>
+          </nav>
+
+                <p class+"content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus iste totam deserunt ipsa blanditiis dolores, minima dolore animi voluptatem vel, voluptate fugiat, asperiores non corporis iure tempora ducimus praesentium quo.</p>
+          <ol>
+              <li>
+                <a href="https://github.com">GitHub</a>
+              </li>
+              <li>
+                <a href="https://facebook.com">Facebook</a>
+              </li>
+              <li>
+                <a href="https://linkedin.com">LinkedIn</a>
+              </li>
+          </ol> -->
 </body>
 </html>
