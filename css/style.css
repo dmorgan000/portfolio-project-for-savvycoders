@@ -58,6 +58,10 @@ table {
 			text-align:center;
     }
 
+		#greeting{
+			color: beige;
+		}
+
     img{
       width: 45vw;;
       height: auto;
@@ -95,10 +99,33 @@ table {
       text-align:center;
     }
 
-    nav{
-      width: 100vw;
-      background-color: #07cd40;
-    }
+		#nav {
+			position: fixed;
+			top: 0;
+			left: 0;
+			height: auto;
+			widows: 100vw;
+		}
+
+		#nav.ul.container{
+			/*	THESE STYLES WILL EXTEND THE STYLES ALREADY CONTAINED IN THE .CONTAINER CLASS*/
+			display:flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			align-items: center;
+		}
+
+	  #nav li{
+				display: inline;
+				list-style-type: none;
+		    /*width: 100vw;
+		    background-color: #07cd40;*/
+		}
+
+		#header	{
+			margin-top: 1.3em;
+		}
 
     #nav-list{
         font-weight: 200;
@@ -131,6 +158,6 @@ table {
     }
     */
 
-    .list-item{
+    /*.list-item{
       display: inline-block;
-    }
+    }*/
