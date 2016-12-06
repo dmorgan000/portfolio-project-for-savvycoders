@@ -7,16 +7,16 @@ while( counter > 0 ){
       // console.log( "FizzBuzz" );
     outputList += "<li>FizzBuzz</li>";
   }
-  else if( counter % 3 === 0 ){
+  else if( counter % 5 === 0 ){
       // console.log( "Fizz" );
     outputList += "<li>Fizz</li>";
   }
-  else if( counter % 5 === 0 ){
+  else if( counter % 3 === 0 ){
       // console.log( "Buzz" );
     outputList += "<li>Buzz</li>";
   }
   else{
-    console.log( counter );
+    // console.log( counter );
     outputList += "<li>" + counter + "</li>";
   }
 
@@ -125,6 +125,7 @@ var roundCounter = 1;
 
 while( roundCounter <= 5){
   runRound();
+
 
   roundCounter++;
 }

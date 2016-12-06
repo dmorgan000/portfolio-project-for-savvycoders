@@ -150,6 +150,9 @@ table {
 			background-color: wheat;
 		}
 
+		.highlight{
+			background-color: yellow;
+		}
     /*
     .absolute{
     position: absolute;
